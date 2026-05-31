@@ -19,6 +19,9 @@ app.get("/experiences", (req, res) => {
 app.get("/faq", (req, res) => {
   res.render("faq");
 });
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
