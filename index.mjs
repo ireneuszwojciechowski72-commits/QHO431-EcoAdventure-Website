@@ -13,6 +13,9 @@ app.get("/", (req, res) => {
 app.get("/habitats", (req, res) => {
   res.render("habitats");
 });
+app.get("/experiences", (req, res) => {
+  res.render("experiences");
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
