@@ -48,8 +48,6 @@ p {
   line-height: 1.6;
 }
 
-/* Home page hero */
-
 .hero {
   min-height: 70vh;
   display: flex;
@@ -97,8 +95,6 @@ p {
   background: #1f5c3b;
 }
 
-/* Opening times section */
-
 .opening-times {
   max-width: 900px;
   margin: 80px auto;
@@ -129,8 +125,6 @@ p {
   color: #1f3d2b;
 }
 
-/* Generic page hero */
-
 .page-hero {
   text-align: center;
   padding: 60px 40px 40px;
@@ -147,10 +141,8 @@ p {
   margin: 0;
 }
 
-/* Habitats page */
-
 .habitats-preview {
-  padding: 60px 40px 80px;
+  padding: 5px 20px 80px;
 }
 
 .habitats-preview h2 {
@@ -199,8 +191,6 @@ p {
   line-height: 1.5;
 }
 
-/* Responsive layout */
-
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -229,4 +219,26 @@ p {
   .opening-main {
     font-size: 24px;
   }
+}
+.opening-times-card {
+  max-width: 460px;
+  margin: 35px auto 25px;
+  background: #e9f4e6;
+  padding: 18px 24px;
+  border-radius: 999px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #2f6b3f;
+}
+.opening-times-card h3 {
+  margin-bottom: 6px;
+  color: #143d2a;
+  font-size: 20px;
+}
+
+.opening-times-card p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f6b3f;
 }
