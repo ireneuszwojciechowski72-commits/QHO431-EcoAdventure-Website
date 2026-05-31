@@ -23,6 +23,8 @@ nav {
   display: flex;
   list-style: none;
   gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -38,12 +40,16 @@ nav {
 h1 {
   text-align: center;
   margin-top: 50px;
+  color: #143d2a;
 }
 
 p {
-  text-align: center;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
 }
+
+/* Home page hero */
+
 .hero {
   min-height: 70vh;
   display: flex;
@@ -90,8 +96,61 @@ p {
 .hero-button:hover {
   background: #1f5c3b;
 }
+
+/* Opening times section */
+
+.opening-times {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  border-top: 8px solid #2f6b3f;
+}
+
+.opening-times h2 {
+  font-size: 40px;
+  color: #143d2a;
+  margin-bottom: 20px;
+}
+
+.opening-main {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f5c3b;
+  margin-bottom: 20px;
+}
+
+.opening-note {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1f3d2b;
+}
+
+/* Generic page hero */
+
+.page-hero {
+  text-align: center;
+  padding: 60px 40px 40px;
+}
+
+.page-hero h1 {
+  font-size: 40px;
+  color: #143d2a;
+  margin: 0 0 15px;
+}
+
+.page-hero p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Habitats page */
+
 .habitats-preview {
-  padding: 80px 40px;
+  padding: 60px 40px 80px;
 }
 
 .habitats-preview h2 {
@@ -102,17 +161,25 @@ p {
 }
 
 .cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  display: block;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .habitat-card {
   background: white;
-  padding: 30px;
+  padding: 30px 36px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease;
+  margin-bottom: 24px;
+  border-left: 8px solid #2f6b3f;
+  min-height: 85px;
+
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  align-items: center;
+  gap: 30px;
 }
 
 .habitat-card:hover {
@@ -121,5 +188,45 @@ p {
 
 .habitat-card h3 {
   color: #143d2a;
-  margin-bottom: 15px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.habitat-card p {
+  text-align: left;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* Responsive layout */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .habitat-card {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .opening-main {
+    font-size: 24px;
+  }
 }

@@ -8,10 +8,10 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("pages/home");
+  res.render("home");
 });
 app.get("/habitats", (req, res) => {
-  res.send("Habitats page coming soon");
+  res.render("habitats");
 });
 
 app.listen(PORT, () => {
